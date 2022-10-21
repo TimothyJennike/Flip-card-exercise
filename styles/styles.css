@@ -4,9 +4,40 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Silkscreen;
 }
 
+.logo {
+    display: flex;
+    margin-right: auto;
+    width: 75px;
+    height: 75px;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 5px greenyellow;
+
+}
+
+.nav li {
+    display: inline-flex;
+    padding: 5px;
+    color: white;
+    justify-content: space-between;
+}
+
+p {
+    text-align: center;
+    font-size: x-large;
+}
+
+main{
+    margin: auto;
+    text-align: center;
+
+}
 .container {
     width: 50vw;
     height: 75vh;
@@ -51,25 +82,60 @@ h2 {
 .picture1 {
     border-radius: 1em;
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    width: 85%;
+    height: 85%;
 }
 
 .picture2 {
-    /*position: absolute;*/
     object-fit: cover;
     justify-content: center;
     align-items: center;
-    perspective: 600px;
+    perspective: 250px;
+    
 }
-
-/*.picture2:hover{
-    visibility: visible;
-}*/
 
 .container:hover .oak{
     transform: rotateY(180deg);
 }
-    
+
+#pic1{
+    width: 300px;
+    height: 300px;
+    grid-column: 2/2;
+}
+
+#pic2{
+    width: 300px;
+    height: 300px;
+    grid-column: 2/2;
+}
+
+#pic3 {
+    width: 300px;
+    height: 300px;
+    grid-column: 2/2;
+}
+ 
+/*main {
+    display: flex;
+}*/
+
+.evolution {
+    text-align: center;
+   /* display: block;*/
+    display: grid;
+    grid-template-columns: repeat(3) 3fr;
+    grid-template-rows:repeat(3) 3fr;
+    background-image: url(https://i.postimg.cc/jSMcWznR/pixel-art-grass-background-seamless-lawn-texture-backdrop-vector-illustration-223655094.jpg);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+
 
 
